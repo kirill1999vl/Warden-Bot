@@ -1,0 +1,15 @@
+@startuml
+actor "Ребёнок" as g
+actor "Родитель" as fc
+  usecase "(On/Off)" as UC1
+  usecase "Отображение таймера" as UC2
+  usecase "Контроль действий" as UC3
+  usecase "Выход из системы" as UC4
+
+fc --> UC1
+fc --> UC2
+fc --> UC3
+fc --> UC4
+g --> UC1
+g --> UC2
+@enduml
